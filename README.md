@@ -6,18 +6,18 @@
 
 ## Table of Contents
 
-1. [Features](#features)  
-2. [Project Structure](#project-structure)  
-3. [Building Dshell](#building-dshell)  
-4. [Running Dshell](#running-dshell)  
-5. [How it Works](#how-it-works)  
-   - [Reading Input](#reading-input)  
-   - [Parsing Commands](#parsing-commands)  
-   - [Executing Commands](#executing-commands)  
-   - [Built-in Commands](#built-in-commands)  
-6. [Adding Your Own Custom Commands](#adding-your-own-custom-commands)  
-7. [Sample Custom Commands Template](#sample-custom-commands-template)  
-8. [Future Enhancements](#future-enhancements)  
+1. [Features](#features)
+2. [Project Structure](#project-structure)
+3. [Building Dshell](#building-dshell)
+4. [Running Dshell](#running-dshell)
+5. [How it Works](#how-it-works)
+   - [Reading Input](#reading-input)
+   - [Parsing Commands](#parsing-commands)
+   - [Executing Commands](#executing-commands)
+   - [Built-in Commands](#built-in-commands)
+6. [Adding Your Own Custom Commands](#adding-your-own-custom-commands)
+7. [Sample Custom Commands Template](#sample-custom-commands-template)
+8. [Future Enhancements](#future-enhancements)
 
 ---
 
@@ -64,7 +64,7 @@ From the project root:
 make
 ```
 
-This will produce an executable named `dshell`.  
+This will produce an executable named `dshell`.
 
 To clean up:
 
@@ -90,7 +90,7 @@ You will see a custom ASCII banner, then a prompt:
 
 ```
 =================================
-   ____  _____ _          _ _  
+   ____  _____ _          _ _
   |  _ \ ___| |__   ___| | |
   | | | / __| '_ \ / _ \ | |
   | |_| \__ \ | | |  __/ | |
@@ -256,25 +256,4 @@ Register them in `builtin_str[]` and `builtin_func[]` as shown previously.
 
 ---
 
-## Future Enhancements
-
-- **Command Whitelist:** restrict which external programs can run
-- **Prompt customization:** add colors or display current directory
-- **History support:** store previous commands and enable arrow navigation
-- **Pipes & redirection:** support `|`, `>`, `<`
-- **Scripting:** allow batch commands from a file
-- **Config file (`.dshellrc`)**: load default commands or aliases at startup
-
----
-
-## Summary
-
-Dshell is a modular, customizable shell that:
-
-- Demonstrates multi-file C projects
-- Teaches dynamic input handling
-- Uses function pointers for built-in commands
-- Provides a simple framework to add your own commands
-
-It’s perfect for experimentation, learning, or building a **custom restricted shell**.
 
